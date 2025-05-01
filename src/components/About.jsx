@@ -5,9 +5,9 @@ import spoon from "../assets/spoon.svg"
 function About() {
     return (
 
-        <div className="aboutconatainer mt-[20vh]">
-            <div className="bg"></div>
-            <div className="content flex w-[100%] justify-center  items-center ">
+        <div className="aboutconatainer mt-[20vh]  relative">
+            <div className="bg font-[500] text-[450px] text-[#272727] absolute top-0 left-0 w-[100%] h-[100%]  z-0 justify-center flex">S</div>
+            <div className="content flex w-[100%] justify-center  items-center z-10 relative ">
                 <div className="left w-[30%]  h-[35vh]">
                     <p className='font-[500] text-[#DCCA87] text-[35px] w-[100%] flex justify-end '>About Us</p>
                     <div className='w-[100%] flex justify-end'>
@@ -25,7 +25,7 @@ function About() {
                     <img src={knife} alt="" />
                 </div>
                 <div className="right w-[30%] h-[35vh]">
-                    <p className='font-[500] text-[#DCCA87] text-[35px] w-[100%] flex  '>About Us</p>
+                    <p className='font-[500] text-[#DCCA87] text-[35px] w-[100%] flex  '>Our History</p>
                     <div className='w-[100%] flex '>
                         <img src={spoon} className="" alt="" />
                     </div>
