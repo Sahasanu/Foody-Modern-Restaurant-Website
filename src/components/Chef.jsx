@@ -6,7 +6,7 @@ import sign from "../assets/sign.png"
 function Chef() {
     return (
         <div className='Chefcont w-[100%] mt-[20vh]'>
-            <div className="maincont border flex w-[70%] border-white ml-auto mr-auto">
+            <div className="maincont  flex w-[70%]  ml-auto mr-auto">
                 <div className="left w-[55%] relative overflow-hidden object-center ">
                     <div className="absolute top-0 left-0 w-[100%] h-[100%]  z-0">
                         <div className="w-[100%] h-[50%]  flex justify-end">
