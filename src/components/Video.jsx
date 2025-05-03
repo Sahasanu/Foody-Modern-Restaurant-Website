@@ -53,8 +53,8 @@ function Video() {
     return (
         <div
             className="videocontainer relative w-full" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <div className='video w-[98%] ml-auto mr-auto'>
-                <video ref={videoRef} src={meal} loop poster={thumbnail} controls={false} className="w-full" /></div>
+            <div className='video w-[90%] lg:w-[98%] ml-auto mr-auto h-[30vh] lg:h-auto'>
+                <video ref={videoRef} src={meal} loop poster={thumbnail} controls={false} className="w-full h-full" /></div>
             {showControls && (
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer bg-black bg-opacity-50 rounded-full w-[50px] h-[50px] flex items-center justify-center transition-opacity duration-300"
                     onClick={togglePlayPause}>

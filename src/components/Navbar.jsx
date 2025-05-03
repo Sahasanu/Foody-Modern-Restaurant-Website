@@ -7,14 +7,14 @@ function Navbar() {
   return (
     <div>
       <div className="navcont flex text-white w-[100%] justify-between h-[9vh] items-center bg-black">
-        <div className="logo ml-[7vh] font-bold text-[40px] font-upright">Sanu Saha</div>
+        <div className="logo ml-[3vw] lg:ml-[7vh] font-bold text-[40px] font-upright">Sanu Saha</div>
         <div className="opts hidden md:flex w-[30%]">
           <ul className="flex w-[100%] justify-around font-[400] text-[13px]">
             <li className="hover:font-[900]">Home</li>
             <li className="hover:font-[900]">Pages</li>
-            <li className="hover:font-[900]">Contact Us</li>
-            <li className="hover:font-[900]">Blog</li>
-            <li className="hover:font-[900]">Landing</li>
+            <li className="hover:font-[900]">Find us</li>
+            <li className="hover:font-[900]">Newslater</li>
+            <li className="hover:font-[900]">Chef</li>
           </ul>
         </div>
         <div className="rght hidden md:flex w-[20%] justify-between mr-[4vw]">
@@ -37,11 +37,11 @@ function Navbar() {
       {isMenuOpen && (
         <div className="mobile-menu bg-[#05040493] text-white w-[100%] p-[20px] md:hidden absolute z-12">
           <ul className="flex flex-col gap-[20px] font-[500] text-[13px] items-center">
-            <li className="hover:font-[900]">Home</li>
+          <li className="hover:font-[900]">Home</li>
             <li className="hover:font-[900]">Pages</li>
-            <li className="hover:font-[900]">Contact Us</li>
-            <li className="hover:font-[900]">Blog</li>
-            <li className="hover:font-[900]">Landing</li>
+            <li className="hover:font-[900]">Find us</li>
+            <li className="hover:font-[900]">Newslater</li>
+            <li className="hover:font-[900]">Chef</li>
             <li className="hover:font-[900]">Log in / Registration</li>
             <li className="hover:font-[900]">Book Table</li>
           </ul>
