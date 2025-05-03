@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div>
       <div className="navcont flex text-white w-[100%] justify-between h-[9vh] items-center bg-black">
-        <div className="logo ml-[3vw] lg:ml-[7vh] font-bold text-[40px] font-upright">Sanu Saha</div>
+        <div className="logo ml-[3vw] lg:ml-[7vh] font-bold text-[40px] font-upright">Foody Guy</div>
         <div className="opts hidden md:flex w-[30%]">
           <ul className="flex w-[100%] justify-around font-[400] text-[13px]">
             <li className="hover:font-[900]">Home</li>

@@ -19,7 +19,7 @@ function Footer() {
            
                 <div className="logo w-full lg:w-[40%] flex flex-col items-center">
                     <div className="boldtag w-[80%] text-[50px] sm:text-[40px] md:text-[50px] text-center">
-                        <p className='tagline text-[#DCCA87] m-0 font-upright font-[700]'>Sanu Saha</p>
+                        <p className='tagline text-[#DCCA87] m-0 font-upright font-[700]'>Foody Guy</p>
                     </div>
                     <div>
                         <p className='w-[80%] ml-auto mr-auto text-center text-white text-[14px] sm:text-[15px] md:text-[16px]'>

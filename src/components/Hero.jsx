@@ -6,10 +6,10 @@ function Hero() {
     return (
         <div className='herocont w-full'>
             <div className='w-[100%] flex lg:w-[90%]  text-white  flex-col lg:flex-row mt-[2vh] lg:mt-[5vh] ml-auto mr-auto  '>
-                <div className=' w-[100%] lg:w-[50%] flex right '>
+                <div className=' w-[100%] lg:w-[50%] flex right gap-[5px] '>
                     <div className="w-[5%] lg:w-[15%]  flex justify-center items-center   ">
                         <div className="hastage pt-[10px] lg:pt-0  flex  gap-[20px]  -rotate-90 h-[3vh] lg:h-[5vh] text-white font-[400] font-upright text-[16px] sm:text-[18px] md:text-[20px]">
-                            <p>#SanuSaha</p>
+                            <p>#FoodyGuy</p>
                             <p>#Bar</p>
                         </div>
                     </div>
