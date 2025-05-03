@@ -10,20 +10,20 @@ function Chef() {
                 <div className="left w-[50%]  flex items-center ml-[5vw] ">
                     <div className="herokey  ">
                         <div className="minitag font-[500]">
-                            <p className='text-white'> contact</p>
+                            <p className='text-white font-upright text-[20px]'> contact</p>
                             <img src={spoon} alt="" />
                         </div>
                         <div className="boldtag  w-[80%]  text-[40px] p-0">
-                            <p className='tagline text-[#DCCA87] m-0'>
+                            <p className='tagline text-[#DCCA87] m-0 font-upright mt-[10px] font-[700] text-[50px]'>
                                 Find Us</p>
                         </div>
                         <div className="dis">
-                            <p className='mt-[4vh]  w-[80%] text-[17px] text-gray-400'>
+                            <p className='mt-[4vh]  w-[90%] text-[17px] text-[#AAAAAA]'>
                                 Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
                         </div>
                         <div className="chefname mt-[5vh]">
-                            <div className="name text-[#DCCA87]">Opening Ours</div>
-                            <div className='text-white flex-col flex gap-[10px] mt-[10px]'>
+                            <div className="name text-[#DCCA87] font-upright font-[500] text-[20px]">Opening Ours</div>
+                            <div className='text-white flex-col flex gap-[10px] mt-[10px] font-[200] text-[15px]'>
                                 <p> Mon Fri: 10:00 am 02:00 am</p>
                                 <p> Sat Sun: 10:00 am 03:00 am</p>
                             </div>
@@ -32,7 +32,7 @@ function Chef() {
                     </div>
                     </div>
                 </div>
-                <div className="right w-[55%] relative overflow-hidden object-center ">
+                <div className="right w-[50%] relative overflow-hidden object-center ">
                     <div className="absolute top-0 left-0 w-[100%] h-[100%]  z-0">
                         <div className="w-[100%] h-[50%]  flex justify-end">
                             <div className="w-[50%] h-full bg-[#DCCA87]"></div>

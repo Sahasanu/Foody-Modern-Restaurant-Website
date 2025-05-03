@@ -23,23 +23,23 @@ function Chef() {
                 <div className="right w-[50%]  flex items-center ml-[5vw] ">
                     <div className="herokey  ">
                         <div className="minitag font-[500]">
-                            <p className='text-white'> Chef’s Word</p>
+                            <p className='text-white font-upright'> Chef’s Word</p>
                             <img src={spoon} alt="" />
                         </div>
                         <div className="boldtag  w-[80%]  text-[40px] p-0">
-                            <p className='tagline text-[#DCCA87] m-0'>
+                            <p className='tagline text-[#DCCA87] m-0 font-upright font-[700] text-[40px]'>
                                 What We belive In</p>
                         </div>
                         <div className="dis">
-                            <p className='mt-[4vh]  w-[80%] text-[17px] text-gray-400'>
+                            <p className='mt-[4vh]  w-[80%] text-[17px] text-[#AAAAAA]'>
                                 <img src={semi} alt="" className=' inline-block w-[35px]' />Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .
                                 auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla
                                 scelerisque scelerisque congue ac consequat, aliquam molestie lectus eu.
                                 Congue iaculis integer curabitur semper sit nunc.</p>
                         </div>
                         <div className="chefname mt-[5vh]">
-                            <div className="name text-[#DCCA87]">Kevin Luo</div>
-                            <div className='text-white'>Chef & Founder</div>
+                            <div className="name text-[#DCCA87] font-upright font-[100] text-[28px]">Kevin Luo</div>
+                            <div className='text-[#AAAAAA]'>Chef & Founder</div>
                         </div>
                         <div className="sign w-[30%] mt-[5vh]"><img src={sign} alt="" className='w-[100%]' /></div>
                     </div>

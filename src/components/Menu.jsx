@@ -1,134 +1,69 @@
-import React from 'react'
-import bottle from "../assets/bottle.png"
-import spoon from "../assets/spoon.svg"
+import React from 'react';
+import bottle from "../assets/bottle.png";
+import spoon from "../assets/spoon.svg";
+import data from '../data/data';
 
 function About() {
     return (
-
-        <div className="aboutconatainer mt-[20vh]  relative text-white">
-            <div className="head w-[100%] flex flex-col  items-center  gap-[8px]">
-                <p className='text-[17px]'> Menu that fits you palatte</p>
-                <div className=""><img src={spoon} alt="" /></div>
-                <p className='text-[45px] text-[#DCCA87]'>Today’s Special</p>
+        <div className="aboutconatainer mt-[5vh] sm:mt-[15vh] lg:mt-[20vh] relative text-white">
+            {/* Header Section */}
+            <div className="head w-[100%] flex flex-col items-center gap-[8px]">
+                <p className="text-[18px] sm:text-[17px] md:text-[20px] font-upright">Menu that fits your palate</p>
+                <div><img src={spoon} alt="" /></div>
+                <p className="text-[45px] sm:text-[40px] md:text-[45px] lg:text-[50px] text-[#DCCA87] font-upright">Today’s Special</p>
             </div>
-            <div className="content flex w-[100%] justify-center gap-[20px] mt-[5vh]">
-                <div className="left w-[20%]   ">
+
+            {/* Content Section */}
+            <div className="content flex flex-col lg:flex-row w-[100%] justify-center gap-[30px] mt-[5vh]">
+                {/* Left Section */}
+                <div className="left w-[90%] ml-auto mr-auto sm:w-[60%] md:w-[40%] lg:w-[20%]">
                     <ul>
-                        <div><p className='text-center text-[30px]'>Wine & Beer</p></div>
-                        <div className="menus mt-[2vh] flex flex-col gap-[10px]">
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$56</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '> Catena Malbec</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$54</div>
-                                </div>
-                                <div className='text-gray-500'>AR | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$56</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$44</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$44</div>
-                                </div>
-                                <div className='text-gray-500'> FR | 750 ml</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Rhino Pale Ale</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$34</div>
-                                </div>
-                                <div className='text-gray-500'>CA | 750 ml</div>
-                            </li>
+                        <div>
+                            <p className="text-center text-[35px] sm:text-[30px] md:text-[35px] font-upright font-bold">Wine & Beer</p>
+                        </div>
+                        <div className="menus mt-[2vh] flex flex-col gap-[20px]">
+                            {data.wines.map((item, index) => (
+                                <li key={index} className="flex flex-col gap-[8px]">
+                                    <div className="main flex w-[100%] justify-between items-center">
+                                        <div className="text-[#DCCA87]">{item.title}</div>
+                                        <div className="border w-[30%] h-[1px] bg-[#DCCA87]"></div>
+                                        <div>{item.price}</div>
+                                    </div>
+                                    <div className="text-[#AAAAAA] text-[12px] sm:text-[13px]">{item.tags}</div>
+                                </li>
+                            ))}
                         </div>
                     </ul>
                 </div>
-                <div className="img w-[20%]">
-                    <img src={bottle} alt="" />
+
+                {/* Center Image */}
+                <div className="img w-full sm:w-[40%] md:w-[30%] lg:w-[20%] flex justify-center">
+                    <img src={bottle} alt="bottle" className="w-[70%] sm:w-[80%] md:w-[90%]" />
                 </div>
-                <div className="right w-[20%]   ">
+
+                {/* Right Section */}
+                <div className="right w-[90%] ml-auto mr-auto sm:w-[60%] md:w-[40%] lg:w-[20%]">
                     <ul>
-                        <div><p className='text-center text-[30px]'>Wine & Beer</p></div>
-                        <div className="menus mt-[2vh]  flex flex-col gap-[10px]">
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$56</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '> Catena Malbec</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$54</div>
-                                </div>
-                                <div className='text-gray-500'>AR | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$56</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$44</div>
-                                </div>
-                                <div className='text-gray-500'>AU | Bottle</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Chapel Hill Shiraz</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$44</div>
-                                </div>
-                                <div className='text-gray-500'> FR | 750 ml</div>
-                            </li>
-                            <li className=' flex flex-col gap-[8px]'>
-                                <div className="main flex  w-[100%] justify-between items-center">
-                                    <div className=' text-[#DCCA87] '>Rhino Pale Ale</div>
-                                    <div className='border w-[30%] h-[0]'></div>
-                                    <div>$34</div>
-                                </div>
-                                <div className='text-gray-500'>CA | 750 ml</div>
-                            </li>
+                        <div>
+                            <p className="text-center text-[35px] sm:text-[30px] md:text-[35px] font-bold font-upright">Cocktail</p>
+                        </div>
+                        <div className="menus mt-[2vh] flex flex-col gap-[20px]">
+                            {data.cocktails.map((item, index) => (
+                                <li key={index} className="flex flex-col gap-[8px]">
+                                    <div className="main flex w-[100%] justify-between items-center">
+                                        <div className="text-[#DCCA87] w-[40%]">{item.title}</div>
+                                        <div className="border w-[30%] h-[1px] bg-[#DCCA87]"></div>
+                                        <div className='w-[10%]'>{item.price}</div>
+                                    </div>
+                                    <div className="text-[#AAAAAA] text-[12px] sm:text-[13px]">{item.tags}</div>
+                                </li>
+                            ))}
                         </div>
                     </ul>
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default About
+export default About;

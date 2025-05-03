@@ -11,15 +11,15 @@ function Gallery() {
             <div className="left w-[30%]  flex items-center ml-[5vw] ">
                 <div className="herokey  ">
                     <div className="minitag font-[500]">
-                        <p className='text-white'> instagram</p>
+                        <p className='text-white font-upright text-[20px] '> instagram</p>
                         <img src={spoon} alt="" />
                     </div>
                     <div className="boldtag  w-[80%]  text-[40px] p-0">
-                        <p className='tagline text-[#DCCA87] m-0'>
+                        <p className='tagline text-[#DCCA87] m-0 font-upright text-[50px] font-[700]'>
                             Photo Gallery</p>
                     </div>
                     <div className="dis">
-                        <p className='mt-[4vh]  w-[80%] text-[15px] text-gray-400'>
+                        <p className='mt-[4vh]  w-[80%] text-[15px] text-[#AAAAAA]'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quidem ducimus asperiores!</p>
                     </div>
                     <div className="btn mt-[3vh] flex"><button className=' bg-[#DCCA87] p-[8px]  text-[15px] text-black'>Know More</button>
