@@ -25,9 +25,9 @@ function Laurel() {
                                 </p>
                             </div>
                         </div>
-                        <div className="laurels w-full lg:w-[80%] grid grid-cols-1 sm:grid-cols-2 gap-[20px] mt-[2vh] lg:mt-[5vh]">
+                        <div className="laurels w-full lg:w-[80%] grid grid-cols-1 sm:grid-cols-2 gap-[20px] mt-[2vh] lg:mt-[5vh] ">
                             {data.awards.map((item, index) => (
-                                <div key={index} className="lourel flex gap-[10px] h-auto items-center">
+                                <div key={index} className="lourel flex gap-[10px] h-auto items-center justify-center">
                                     <div className='image invert w-[20%] lg:w-[30%] sm:w-[25%] relative'>
                                         <div className="bg font-[500] text-[45px] sm:text-[30px] md:text-[35px] text-[#070707b3] absolute bottom-2 left-0 w-full h-full z-10 flex justify-center items-center">
                                             {index + 1}

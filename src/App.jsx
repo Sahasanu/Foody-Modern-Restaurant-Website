@@ -17,15 +17,16 @@ function App() {
     <>
       <div className="wholecont bg-black  overflow-x-hidden">
         <Navbar />
-        <Hero />
+        <div id="home"><Hero /></div>
         <About />
         <Menu />
-        <Chef />
-        <Video/>
+        <div id="chef"><Chef /></div>
+        <Video />
         <Laurel />
         <Gallery />
-        <FindUs />
-        <Newsletter />
+        <div id="findus">  <FindUs /></div>
+        <div id="newslater"><Newsletter /></div>
+
         <Footer />
       </div>
     </>
